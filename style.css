@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Reset and base styles  */
 :root {
-	--bgc:#1f1f1f;
+	--bgc:#161616;
 	--bgc-2:#fff5e9;
-	--link:#9d7f5a;
-	--btn:#caa576;
+	--link:#af8d64;
+	--btn:#c0a075;
 }
 * {
 	padding: 0px;
@@ -108,10 +108,17 @@ body {
 
 }
 .nav {
+	background-color: var(--bgc);
+	padding: 25px 0;
 	position: fixed;
 	z-index: 22;
+	width: 100%;
+	top: 0px;
+}
+.nav_all {
+
 	display: flex;
-	top: 30px;
+	
 	align-items: center;
 	width: 100%;
 	max-width: 1320px;
@@ -121,6 +128,9 @@ body {
 	color: var(--link);
 	padding-bottom: 5px;
 	transition: all .3s;
+}
+.logo {
+	font-weight: 700;
 }
 .nav_link:hover {
 	color: var(--btn);
@@ -169,14 +179,22 @@ body {
 	width: 100%;
 	margin-top: 70px;
 	transition: all .3s;
-
+    border-radius: 59px;
 }
 .header_left-btn:hover {
 	color: white;
 	opacity: .8;
 }
 
-
+.main_text {
+	font-size: 20px;
+	background-color: #fff;
+	background-color: var(--btn);
+	color: #000000;
+	border-radius: 10px;
+	padding: 30px;
+	margin-top: 80px;
+}
 .section_one {
 	display: flex;
 	justify-content: space-between;
@@ -386,7 +404,7 @@ body {
 .section_six-right-abs {
 	position: absolute;
 
-	opacity: 0.65;
+	opacity: 0.55;
 	max-width: 1200px;
 	bottom: -250px;
     background-color: #ffffff;
@@ -454,6 +472,7 @@ body {
     font-size: 16px;
     padding-left: 60px;
     padding-right: 60px;
+	border-radius: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
